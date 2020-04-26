@@ -1,0 +1,66 @@
+{
+	"id": "9045497f-3eeb-930f-ca69-2a0130274687",
+	"name": "ACMEBANK Account Manager",
+	"description": "",
+	"order": [
+		"e9d053a0-9779-a8a2-7a85-0d097c576249",
+		"0848014d-ac5f-4429-1e5b-eb7608d5c91e"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1587906003290,
+	"owner": "2510315",
+	"public": false,
+	"requests": [
+		{
+			"id": "0848014d-ac5f-4429-1e5b-eb7608d5c91e",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8080/api/v1/balances/accounts/12345678",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1587915357346,
+			"name": "Get Balance",
+			"description": "",
+			"collectionId": "9045497f-3eeb-930f-ca69-2a0130274687",
+			"responses": []
+		},
+		{
+			"id": "e9d053a0-9779-a8a2-7a85-0d097c576249",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/api/v1/balances/transfers",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1587915361482,
+			"name": "Transfer",
+			"description": "",
+			"collectionId": "9045497f-3eeb-930f-ca69-2a0130274687",
+			"responses": [],
+			"rawModeData": "{\n\t\"from\": 12345678,\n\t\"to\": 88888888,\n\t\"quantity\": \"100.23\",\n\t\"currency\": \"HKD\"\n}"
+		}
+	]
+}
